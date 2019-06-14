@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication2.Contracts;
-using WebApplication2.Models;
+using WebApplication2.Model;
 
 namespace WebApplication2.Controllers
 {
-    
+    //[Route("api/[controller]")]
+    //[ApiController]
     public class EmployeeController : Controller
     {
         private IEmployeeRepository _employeeRepository;
@@ -20,34 +21,42 @@ namespace WebApplication2.Controllers
         }
         [HttpGet]
         [Route("")]
-        [Route("Employee/Employee")]
+        [Route("Employee/AllEmployee/{id}")]
         //[Route("Home/GetAllEmployee")]
-        public JsonResult GetEmployeeDetails()
+        public JsonResult GetEmployeeDetails(int id)
         {
-            var employees = _employeeRepository.GetAllEmployee().ToList();
+            //return Json("Vishnu");
+            var employees = _employeeRepository.GetAllEmployee(id).ToList();
             return Json(employees);
         }
         [HttpGet]
-        [Route("Employee/Employee/{id}")]
+        [Route("Employee/Employee/{merchId}/{empId}")]
         // [Route("Home/GetEmployee/{id?}")]
-        public JsonResult EmployeeDetails(int id)
+        public JsonResult EmployeeDetails(int merchId, int empId)
         {
-            Employee model = _employeeRepository.GetEmployee(id);
+            var model = _employeeRepository.GetEmployee(merchId, empId);
             return Json(model);
         }
         [HttpPost]
-        [Route("Employee/Employee")]
-        public JsonResult AddEmployeeDetails([FromBody] Employee employee)
+        [Route("Employee/AddEmployee/{id}")]
+        public JsonResult AddEmployeeDetails(int id, [FromBody] Employee employee)
         {
-            _employeeRepository.AddEmployee(employee);
+            _employeeRepository.AddEmployee(id, employee);
             return Json(employee);
         }
         [HttpDelete]
-        [Route("Employee/DeleteEmployee/{empId}/{merchId}")]
-        public JsonResult DeleteEmployeeDetails(int empId,int merchId)
+        [Route("Employee/DeleteEmployee/{merchId}/{empId}")]
+        public JsonResult DeleteEmployeeDetails(int merchId, int empId)
         {
-           return Json( _employeeRepository.DeleteEmployee(empId,merchId));
-           
+            return Json(_employeeRepository.DeleteEmployee(merchId, empId));
+
+        }
+        [HttpPost]
+        [Route("Employee/ValidateLogin/{id}")]
+        public JsonResult ValidateLogin(int id, [FromBody]LoginContract loginContract)
+        {
+
+            return Json(_employeeRepository.ValidateLogin(id, loginContract));
         }
     }
 }

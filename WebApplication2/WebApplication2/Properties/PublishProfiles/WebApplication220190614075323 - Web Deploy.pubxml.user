@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7Vpeyv3qDkyhakPkX2NjiQAAAAACAAAAAAAQZgAAAAEAACAAAAAYfUBCa5PVfEJhXYgirw1X3beVKG4atFskmQoWy7n4NgAAAAAOgAAAAAIAACAAAACbZyH+20GkejaYt6ZQ8Txg4XYSz/W7YIHM49QmAT3/woAAAAB9Q+DlKnbDJx7AuOtY6OSljxXaaMUh2ttHGmcgXYTFGd/Q5KQwfj6RWIrqLhUswqBK15MEDJb0jY7MUH5m1OgViMN84BZh5qjmzwC0BCcm3FMDhxqqMps6vXtwVq/7YYIvrJcArb2kb98gKKMZ7Y1GmQtX6+L4kvxhr7KJVhAIO0AAAABz3fhTzZIKK8aD8wknMtwD/E+bYoiIhNXY3r/3GBOghf6qtCnKNkqtquhoSxei8pIRv7yGrVUf75y54upsvLC4</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="EmployeeDBConnection">
+      <Value>Data Source=tcp:webapplication220190612125602dbserver.database.windows.net,1433%3bInitial Catalog=WebApplication220190614075323_db%3bUser Id=subbusummu%40hotmail.com%40webapplication220190612125602dbserver%3bPassword=Aarya18!</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="WebApplication2.Model.AppDbContext">
+      <Value>Data Source=tcp:webapplication220190612125602dbserver.database.windows.net,1433%3bInitial Catalog=WebApplication220190614075323_db%3bUser Id=subbusummu%40hotmail.com%40webapplication220190612125602dbserver%3bPassword=Aarya18!</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

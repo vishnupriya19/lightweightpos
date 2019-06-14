@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\obj\Release\netcoreapp2.2\PubTmp\Out\" />
+  <dbfullsql path="E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\obj\Release\netcoreapp2.2\PubTmp\EFSQLScripts\WebApplication2.Model.AppDbContext.sql" />
+</sitemanifest>

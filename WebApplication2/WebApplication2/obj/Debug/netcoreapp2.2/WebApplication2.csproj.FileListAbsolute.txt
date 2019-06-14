@@ -1,14 +1,14 @@
-E:\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.2\WebApplication2.deps.json
-E:\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.2\WebApplication2.runtimeconfig.json
-E:\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.2\WebApplication2.runtimeconfig.dev.json
-E:\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.2\WebApplication2.dll
-E:\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.csprojAssemblyReference.cache
-E:\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.csproj.CoreCompileInputs.cache
-E:\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.RazorAssemblyInfo.cache
-E:\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.RazorAssemblyInfo.cs
-E:\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.AssemblyInfoInputs.cache
-E:\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.AssemblyInfo.cs
-E:\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.RazorTargetAssemblyInfo.cache
-E:\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.2\WebApplication2.pdb
-E:\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.dll
-E:\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.pdb
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.2\WebApplication2.deps.json
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.2\WebApplication2.runtimeconfig.json
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.2\WebApplication2.runtimeconfig.dev.json
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.2\WebApplication2.dll
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\bin\Debug\netcoreapp2.2\WebApplication2.pdb
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.csproj.CoreCompileInputs.cache
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.RazorAssemblyInfo.cache
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.RazorAssemblyInfo.cs
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.AssemblyInfoInputs.cache
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.AssemblyInfo.cs
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.RazorTargetAssemblyInfo.cache
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.dll
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.pdb
+E:\visual studio\priya\ncrwork\WebApplication2\WebApplication2\obj\Debug\netcoreapp2.2\WebApplication2.csprojAssemblyReference.cache
