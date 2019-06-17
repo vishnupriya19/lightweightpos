@@ -7,7 +7,7 @@ namespace WebApplication2.Model
 {
     public interface IMerchantRepository
     {
-        Merchant AddMerchantDetails(Merchant merchant);
+        int AddMerchantDetails(Merchant merchant);
         List<Merchant> GetAllMerchants();
     }
 }

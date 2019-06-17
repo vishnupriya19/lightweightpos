@@ -29,6 +29,10 @@ namespace WebApplication2
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
             services.AddScoped<IDesignationRepository, SQLDesignationRepository>();
             services.AddScoped<IMerchantRepository, SQLMerchantRepository>();
+            services.AddScoped<ICategoryRepository, SQLCategoryRepository>();
+            services.AddScoped<IProductRepository, SQLProductRepository>();
+            services.AddScoped<ICustomerRepository, SQLCustomerRepository>();
+            services.AddScoped<ITicketRepository, SQLTicketRepository>();
             //services.AddAuthentication("BasicAuthentication")
               //  .AddScheme<AuthenticationSchemeOptions, UserBasicAuthenticationHandler>("BasicAuthentication", null);
             services.AddScoped<IUserService, UserService>();

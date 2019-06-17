@@ -13,11 +13,11 @@ namespace WebApplication2.Model
         {
             this.context = context;
         }
-        public Merchant AddMerchantDetails(Merchant merchant)
+        public int AddMerchantDetails(Merchant merchant)
         {
             context.Merchant.Add(merchant);
             context.SaveChanges();
-            return merchant;
+            return merchant.MerchantId;
         }
 
         public List<Merchant> GetAllMerchants()

@@ -31,7 +31,7 @@ namespace WebApplication2.Controllers
             merchant.OrganizationName = registerContract.Organization;
             merchant.Address = registerContract.Address;
             merchant.Phone = registerContract.Phone;
-            merchant = _merchantRepository.AddMerchantDetails(merchant);
+            registerContract.id = _merchantRepository.AddMerchantDetails(merchant);
 
             Employee employee = new Employee();
             employee.Name = registerContract.Name;

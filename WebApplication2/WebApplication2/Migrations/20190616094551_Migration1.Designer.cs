@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplication2.Model;
 
 namespace WebApplication2.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190616094551_Migration1")]
+    partial class Migration1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -245,62 +247,6 @@ namespace WebApplication2.Migrations
                     b.HasAlternateKey("MerchantId", "ProductId");
 
                     b.ToTable("Quantity");
-                });
-
-            modelBuilder.Entity("WebApplication2.Model.Ticket", b =>
-                {
-                    b.Property<long>("TicketId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnName("ticketId")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("Merchantid")
-                        .HasColumnName("merchantid");
-
-                    b.Property<int?>("CustomerId")
-                        .HasColumnName("customerId");
-
-                    b.Property<int>("EmployeeId")
-                        .HasColumnName("employeeId");
-
-                    b.Property<DateTime>("OrderDate")
-                        .HasColumnName("orderDate")
-                        .HasColumnType("datetime");
-
-                    b.Property<double>("TotalCost")
-                        .HasColumnName("totalCost");
-
-                    b.HasKey("TicketId", "Merchantid");
-
-                    b.ToTable("Ticket");
-                });
-
-            modelBuilder.Entity("WebApplication2.Model.TicketLineProduct", b =>
-                {
-                    b.Property<long>("TicketId")
-                        .HasColumnName("ticketId");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnName("productId");
-
-                    b.Property<int>("MerchantId")
-                        .HasColumnName("merchantId");
-
-                    b.Property<double?>("Commission")
-                        .HasColumnName("commission");
-
-                    b.Property<double>("Price")
-                        .HasColumnName("price");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnName("quantity");
-
-                    b.Property<double>("TotalPrice")
-                        .HasColumnName("totalPrice");
-
-                    b.HasKey("TicketId", "ProductId", "MerchantId");
-
-                    b.ToTable("TicketLineProduct");
                 });
 
             modelBuilder.Entity("WebApplication2.Model.Category", b =>
